@@ -1,0 +1,26 @@
+@import "../../abstracts/var.scss";
+@import "../../abstracts/extends.scss";
+
+.result-item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+
+  &__title {
+    @extend %fontGilory;
+  }
+
+  &__value {
+  }
+
+  &__item {
+  }
+}
+@media (max-width: 768px) {
+  .result-item {
+    width: 250px;
+  }
+}

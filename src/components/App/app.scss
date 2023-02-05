@@ -1,0 +1,55 @@
+@import "../../abstracts/var.scss";
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $color-light-grey;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: "Nekst", sans-serif;
+  font-weight: bold;
+  color: $color-black;
+  font-size: 54px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1440px;
+    padding: 215px 50px;
+    gap: 32px;
+    background-color: $color-white;
+  }
+
+  &__title {
+    font-size: 54px;
+    line-height: 90%;
+    text-align: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    font-size: 22px;
+
+    &__title {
+      font-size: 34px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .app {
+    font-size: 22px;
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+}

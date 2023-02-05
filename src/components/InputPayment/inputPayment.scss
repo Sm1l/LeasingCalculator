@@ -1,0 +1,90 @@
+@import "../../abstracts/extends.scss";
+@import "../../abstracts/var.scss";
+
+.input-payment {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+
+  &_disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
+
+  &__label {
+    @extend %fontGilory;
+  }
+  &__input {
+    width: 100%;
+    color: $color-grey;
+    background-color: $color-light-grey;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 120%;
+    border-radius: 16px;
+    padding: 16px 84px 16px 24px;
+  }
+
+  &__number {
+    font-weight: 900;
+    line-height: 120%;
+    color: $color-grey;
+    position: absolute;
+    background-color: $color-medium-grey;
+    font-size: 20px;
+    top: 42px;
+    right: 10px;
+    padding: 14px;
+    border-radius: 15px;
+    &:focus {
+      background-color: $color-white;
+    }
+    &_span {
+      position: absolute;
+      right: 40px;
+      padding: 14px 0 14px 0;
+      background-color: transparent;
+    }
+  }
+
+  &__range {
+    width: 95%;
+    position: absolute;
+    top: 99px;
+    left: 10px;
+    appearance: none;
+    cursor: pointer;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: $color-orange;
+      border-radius: 50%;
+      margin-top: -8px;
+    }
+
+    &::-webkit-slider-runnable-track {
+      background-color: $color-orange;
+      height: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .input-payment {
+    &__input {
+      font-size: 22px;
+    }
+    &__number {
+      font-size: 18px;
+      top: 39px;
+    }
+  }
+}

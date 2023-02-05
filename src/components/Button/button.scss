@@ -1,0 +1,45 @@
+@import "../../abstracts/var.scss";
+
+.button {
+  font: inherit;
+  width: 433px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: $color-white;
+  background-color: $color-orange;
+  padding: 16px 92px;
+  border-radius: 40px;
+  transition: background-color 300ms ease-out;
+  position: relative;
+
+  &:hover {
+    background-color: $color-black;
+    transition: background-color 300ms ease-out;
+  }
+
+  &:active {
+    background-color: $color-grey;
+  }
+
+  &_disabled {
+    opacity: 0.4;
+    color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 20px;
+    padding: 16px 42px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 470px) {
+  .button {
+    font-size: 18px;
+    padding: 16px;
+    width: 181px;
+  }
+}
