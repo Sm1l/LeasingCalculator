@@ -1,5 +1,5 @@
-...loading
+https://sm1l.github.io/LeasingCalculator/
 
-Leasing calculator
+Онлайн калькулятор для рассчета стоимости автомобился в лизинг! Отправка данных на сервер!
 
-React, адаптив
+React, scss, адаптивная верстка.

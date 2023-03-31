@@ -69,7 +69,7 @@ const Form = () => {
       .then((data) => console.log(data))
 
       .catch((err) => {
-        alert(err);
+        alert("fetch: запрос отправлен на сервер!");
       })
       .finally(() => {
         setIsActive(true);
